@@ -5,6 +5,7 @@
     "skipDefaultLibCheck": true,
     "noUncheckedIndexedAccess": true,
     "jsx": "preserve",
-    "jsxImportSource": "solid-js"
+    "jsxImportSource": "solid-js",
+    "target": "ES2022",
   }
 }
