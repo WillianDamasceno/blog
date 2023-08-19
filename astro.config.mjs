@@ -10,7 +10,7 @@ export default defineConfig({
   site: "https://example.com",
   integrations: [mdx(), sitemap(), tailwind()],
   compressHTML: true,
-  output: "server",
+  output: "hybrid",
   adapter: vercel({
     analytics: true,
   }),
