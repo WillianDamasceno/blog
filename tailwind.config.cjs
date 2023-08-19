@@ -37,8 +37,8 @@ module.exports = {
       {
         dark: {
           ...require("daisyui/src/theming/themes")["[data-theme=dark]"],
-          primary: "hsl(20 100% 55%)",
-          "--primary": "15 100% 55%",
+          primary: "hsl(10 100% 40%)",
+          "--primary": "10 100% 40%",
 
           "base-100": "hsl(225 25% 20%)",
           "--base-100:": "225 25% 20%",
