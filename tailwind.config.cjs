@@ -15,6 +15,9 @@ module.exports = {
         primary: withOpacity("--primary"),
         base: {
           100: withOpacity("--base-100"),
+          200: withOpacity("--base-200"),
+          300: withOpacity("--base-300"),
+          content: withOpacity("--base-content"),
         },
       },
       container: {
@@ -48,6 +51,9 @@ module.exports = {
 
           "base-300": "hsl(225 25% 10%)",
           "--base-300:": "225 25% 10%",
+
+          "base-content": "hsl(225 25% 80%)",
+          "--base-content": "225 25% 80%",
         },
       },
     ],
