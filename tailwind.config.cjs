@@ -10,5 +10,14 @@ module.exports = {
     require("@tailwindcss/container-queries"),
     require("daisyui"),
   ],
+  daisyui: {
+    themes: [
+      {
+        dark: {
+          ...require("daisyui/src/theming/themes")["[data-theme=dark]"],
+          primary: "orangered",
+        },
+      },
+    ],
+  },
 }
-
