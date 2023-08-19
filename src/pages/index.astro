@@ -11,12 +11,42 @@ import { SITE } from "@/config"
 <html lang="en">
   <head>
     <BaseHead title={SITE.title} description={SITE.description} />
+
+    <style>
+      main > section[aria-labelledby] {
+        @apply py-8 space-y-4;
+
+        h2 {
+          @apply drop-shadow text-2xl text-primary underline decoration-dashed decoration-2 underline-offset-8;
+        }
+      }
+    </style>
   </head>
+
   <body>
     <Header title={SITE.title} />
 
     <main class="container py-16">
-      <h1>🧑‍🚀 Hello, Astronaut!</h1>
+      <p>
+        Hi, My name is {SITE.author}, and this is my brand new website!
+      </p>
+      <p>Hope you enjoi it</p>
+
+      <section aria-labelledby="section-projects">
+        <h2 id="section-projects">Highlighted Projects</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="rounded bg-base-200 p-8">Project Card</div>
+        </div>
+      </section>
+
+      <section aria-labelledby="section-blog-posts">
+        <h2 id="section-blog-posts">Blog Posts</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="rounded bg-base-200 p-8">Blog card</div>
+        </div>
+      </section>
     </main>
 
     <Footer />
