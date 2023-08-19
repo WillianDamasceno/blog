@@ -3,6 +3,7 @@
   "compilerOptions": {
     "strictNullChecks": true,
     "skipDefaultLibCheck": true,
+    "noUncheckedIndexedAccess": true,
     "jsx": "preserve",
     "jsxImportSource": "solid-js"
   }
