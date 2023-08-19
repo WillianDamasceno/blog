@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/rss": "^2.4.4",
     "astro": "^2.10.12",
+    "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "solid-js": "^1.7.11",
     "tailwind-merge": "^1.14.0"
