@@ -10,13 +10,13 @@ function withOpacity(variable) {
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
-    colors: {
-      primary: withOpacity("--primary"),
-      base: {
-        100: withOpacity("--base-100"),
-      },
-    },
     extend: {
+      colors: {
+        primary: withOpacity("--primary"),
+        base: {
+          100: withOpacity("--base-100"),
+        },
+      },
       container: {
         center: true,
         padding: "1rem",
