@@ -8,6 +8,9 @@ module.exports = {
         padding: "1rem",
       },
     },
+    fontFamily: {
+      mono: ["IBM Plex Mono", "monospace"],
+    },
   },
   plugins: [
     require("@tailwindcss/typography"),
