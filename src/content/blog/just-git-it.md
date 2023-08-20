@@ -8,12 +8,12 @@ heroImage: ""
 
 ## Mapping
 
-- [Getting started with Git!](#how-to-get-started-with-git)
+- [Getting started with Git!](#)
   - [What is Git](#)
   - [When to use Git](#)
   - [Survival Manual (Basic Git commands)](#)
   - [Where to host a Git repository](#)
-  - [Usefull Git configs](#)
+  - [Useful Git configs](#)
 - [Git commands that will save you](#)
   - [](#)
 - [Deep dive](#)
