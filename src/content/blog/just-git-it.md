@@ -4,6 +4,7 @@ description: "Just GIT it"
 pubDate: "Aug 19 2023"
 updatedDate: "Aug 20 2023"
 heroImage: ""
+draft: true
 ---
 
 ## Mapping
