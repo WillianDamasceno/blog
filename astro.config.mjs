@@ -2,7 +2,7 @@ import { defineConfig } from "astro/config"
 import mdx from "@astrojs/mdx"
 import sitemap from "@astrojs/sitemap"
 import tailwind from "@astrojs/tailwind"
-import vercel from "@astrojs/vercel/edge"
+import vercel from "@astrojs/vercel/serverless"
 import solidJs from "@astrojs/solid-js"
 
 // https://astro.build/config
@@ -12,6 +12,8 @@ export default defineConfig({
   compressHTML: true,
   output: "hybrid",
   adapter: vercel({
-    analytics: true,
+    webAnalytics: {
+      enabled: true,
+    },
   }),
 })
