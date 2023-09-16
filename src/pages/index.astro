@@ -7,7 +7,7 @@ import Footer from "@/components/Footer.astro"
 import { SITE } from "@/config"
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <BaseHead title={SITE.title} description={SITE.description} />
@@ -27,7 +27,26 @@ import { SITE } from "@/config"
     <Header title={SITE.title} />
 
     <main class="container py-16">
-      <p>
+      <section aria-label="title">
+        <a
+          href="/blog/just-git-it"
+          class="flex flex-col gap-8 items-center justify-center h-[50vh] p-4 rounded-3xl text-center bg-base-200 hover:bg-base-300 transition-colors"
+        >
+          <h2
+            id="title"
+            class="text-primary text-6xl font-semibold sm:underline underline-offset-8"
+          >
+            Just GIT it
+          </h2>
+
+          <p class="prose">
+            If you are a little bit lost when dealing with GIT, you probably are
+            going to get value from this post!
+          </p>
+        </a>
+      </section>
+
+      <!-- <p>
         Hi, My name is {SITE.author}, and this is my brand new website!
       </p>
       <p>Hope you enjoi it</p>
@@ -46,7 +65,7 @@ import { SITE } from "@/config"
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <div class="rounded bg-base-200 p-8">Blog card</div>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <Footer />
