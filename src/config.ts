@@ -7,5 +7,14 @@ export const SITE = {
   author: "Willian Damasceno",
   ogImage: "",
   theme: "dark",
-  locale: ["en-US"]
+  locale: ["en-US"],
+}
+
+export const SOCIAL_MEDIAS = {
+  github: {
+    link: "https://github.com/WillianDamasceno",
+  },
+  linkedIn: {
+    link: "https://www.linkedin.com/in/willian-damasceno-dev"
+  }
 }
