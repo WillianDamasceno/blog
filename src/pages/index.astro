@@ -12,7 +12,7 @@ import { SITE } from "@/config"
   <head>
     <BaseHead title={SITE.title} description={SITE.description} />
 
-    <style>
+    <!-- <style>
       main > section[aria-labelledby] {
         @apply py-8 space-y-4;
 
@@ -20,14 +20,14 @@ import { SITE } from "@/config"
           @apply drop-shadow text-2xl text-primary underline decoration-dashed decoration-2 underline-offset-8;
         }
       }
-    </style>
+    </style> -->
   </head>
 
   <body>
     <Header title={SITE.title} />
 
     <main class="container py-16">
-      <section aria-label="title">
+      <section aria-labelledby="title">
         <a
           href="/blog/just-git-it"
           class="flex flex-col gap-8 items-center justify-center h-[50vh] p-4 rounded-3xl text-center bg-base-200 hover:bg-base-300 transition-colors"
