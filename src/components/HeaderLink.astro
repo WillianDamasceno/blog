@@ -6,13 +6,31 @@ type Props = HTMLAttributes<"a">
 const { href, class: className, ...props } = Astro.props
 
 const { pathname } = Astro.url
-const isActive = href === pathname || href === pathname.replace(/\/$/, "")
+
+function isActive(href: string | URL) {
+  if (href === pathname || href === pathname.replace(/\/$/, "")) {
+    return true
+  }
+
+  if (href === "/") {
+    return false
+  }
+
+  if (
+    pathname.includes(String(href)) ||
+    pathname.includes(String(href + "/"))
+  ) {
+    return true
+  }
+
+  return false
+}
 ---
 
 <a
   href={href}
   class="inline-block py-8 px-2"
-  class:list={[className, { active: isActive }]}
+  class:list={[className, { active: isActive(href ?? "") }]}
   {...props}
 >
   <slot />
