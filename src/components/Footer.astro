@@ -1,9 +1,9 @@
 ---
-import { SITE } from "../config"
+import { SITE, SOCIAL_MEDIAS } from "../config"
 const today = new Date()
 ---
 
-<footer class="text-center pt-8 pb-24 px-4">
+<footer class="text-center p-4">
   <span>
     &copy; {today.getFullYear()}
     {" "}
@@ -11,7 +11,7 @@ const today = new Date()
   </span>
 
   <div class="flex justify-center gap-4 mt-4">
-    <a href="https://github.com/withastro/astro" target="_blank">
+    <a href={SOCIAL_MEDIAS.github.link} target="_blank">
       <span class="sr-only">Go to Astro's GitHub repo</span>
       <svg
         viewBox="0 0 16 16"

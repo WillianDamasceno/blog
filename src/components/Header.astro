@@ -1,10 +1,10 @@
 ---
 import HeaderLink from "./HeaderLink.astro"
-import { SITE } from "../config"
+import { SITE, SOCIAL_MEDIAS } from "../config"
 ---
 
-<header class="container px-4 py-1 border-b border-primary">
-  <nav class="flex justify-between items-center">
+<header class="container p-4 border-b border-primary">
+  <nav class="flex flex-col sm:flex-row justify-between items-center">
     <a href="/">{SITE.title}</a>
 
     <div class="flex gap-8 text-lg">
@@ -14,7 +14,7 @@ import { SITE } from "../config"
     </div>
 
     <div class="hidden sm:flex">
-      <a href="https://github.com/WillianDamasceno" target="_blank">
+      <a href={SOCIAL_MEDIAS.github.link} target="_blank">
         <span class="sr-only">Visit Willian's GitHub Profile</span>
         <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
           ><path
