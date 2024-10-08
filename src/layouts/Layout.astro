@@ -1,5 +1,7 @@
 ---
 import Icons from '../components/Icons.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 
 interface Props {
 	title: string;
@@ -23,8 +25,11 @@ const { title } = Astro.props;
 	<body>
 	  <Icons />
 
+		<Header />
 
 	  <slot />
+
+		<Footer />
 	</body>
 </html>
 
