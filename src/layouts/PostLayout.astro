@@ -1,0 +1,21 @@
+---
+const { frontmatter } = Astro.props;
+---
+
+<section class="container py-16">
+  <div class="max-w-3xl mx-auto flex flex-col gap-1">
+    <h1 class="text-5xl font-bold">{frontmatter.title}</h1>
+    <p class="text-lg">Written by {frontmatter.author}</p>
+    <time datetime="frontmatter.pubDate">
+      {new Date(frontmatter.pubDate).toLocaleDateString('pt-BR', {
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric',
+      })}
+    </time>
+  </div>
+</section>
+
+<main class="prose mx-auto px-4">
+  <slot />
+</main>

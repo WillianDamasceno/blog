@@ -1,0 +1,25 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getBase } from '../../lib/utils';
+---
+
+<Layout title="My Blog">
+	<main class="container">
+    <section>
+      <h1 class="text-4xl font-bold">What am I learning?</h1>
+    </section>
+
+    <section class="mx-auto max-w-3xl grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <a href={getBase('/learning/nix')}>
+     	  <article>
+     			<img src="" alt="" class="w-full h-full object-cover bg-black aspect-[1.5]" />
+
+     			<div class="flex flex-col justify-center">
+   			    <h2 class="text-2xl font-bold">Nix</h2>
+        		<p>Nix Package Manager</p>
+     			</div>
+    		</article>
+      </a>
+    </section>
+	</main>
+</Layout>

@@ -1,7 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { getBase } from '../lib/utils';
 ---
 
 <Layout title="My Blog">
-	<main class="container mx-auto">My Blog</main>
+	<main class="container p-4">
+	  <a href={getBase('/learning')}>
+			What am I learning
+		</a>
+	</main>
 </Layout>
