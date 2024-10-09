@@ -1,0 +1,13 @@
+---
+import { getBase } from "../lib/utils";
+
+interface Props {
+  class?: string;
+}
+
+const  { class: className } = Astro.props;
+---
+
+<a href={getBase('/philosophy')} class:list={['text-xs', className]}>
+  Consider reading this website philosophy.
+</a>

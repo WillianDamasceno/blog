@@ -1,0 +1,24 @@
+---
+import Card from '../../components/Card.astro';
+import PhilosophyWarn from '../../components/PhilosophyWarn.astro';
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Linux Journey">
+	<main class="container flex flex-col gap-16 py-16">
+    <section class="prose max-w-none w-full">
+      <PhilosophyWarn class="block text-end" />
+
+      <h1>Linux Journey</h1>
+
+      <p>All the content you can find from this page is a story about my journey learning linux and its ecosystem.</p>
+      <p>If you are interested in learning Linux, I think you'll benefit from reading this story.</p>
+    </section>
+
+    <hr />
+
+    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <Card title="Coming from Windows" link="/linux-journey/coming-from-windows" icon="#svg-windows" />
+    </section>
+	</main>
+</Layout>

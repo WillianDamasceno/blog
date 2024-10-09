@@ -1,15 +1,20 @@
 ---
+import Card from '../components/Card.astro';
+import PhilosophyWarn from '../components/PhilosophyWarn.astro';
 import Layout from '../layouts/Layout.astro';
-import { getBase } from '../lib/utils';
 ---
 
 <Layout title="My Blog">
-	<main class="container p-4 grid grid-cols-1 lg:grid-cols-2">
-	  <a href={getBase('/learning')} class="text-2xl flex gap-2 justify-center bg-black/5 hover:bg-black/10 items-center aspect-[2.5] rounded-2xl">
-			<svg class="size-8">
-			  <use href="#svg-book"></use>
-			</svg>
-			<span>What am I learning</span>
-		</a>
+  <section class="container py-16">
+    <div class="prose max-w-none">
+      <PhilosophyWarn class="block text-end" />
+
+      <h1 class="text-4xl font-bold">Welcome to my blog!</h1>
+    </div>
+  </section>
+
+	<main class="container p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+	  <Card title="Linux Journey" link="/linux-journey" icon="#svg-linux" />
+	  <!-- <Card title='What am I learning' link='/learning' /> -->
 	</main>
 </Layout>
